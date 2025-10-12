@@ -12,19 +12,20 @@ body {
     line-height: 1.6;
     background-color: hsl(29, 53%, 90%);
     color: #000;
+    padding-block-end: 1rem;
 }
 
 .main-container {
-    max-width: 1440px;
-    margin: 4rem auto;
+    max-width: 23.5rem;
+    margin: 10px auto;
     background: hsl(0, 0%, 100%);
-    padding: 25px;
+    padding: 16px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sub-container {
-    padding-left: 20px;
+    padding-inline-start: 10px;
 }
 
 .span-bold {
@@ -34,11 +35,11 @@ body {
 
 .sub-container ul,
 ol {
-    padding-left: 20px;
-    margin-block: 15px 30px;
+    padding-inline-start: 10px;
+    margin-block: 8px 16px;
 }
 
-ul {
+.sub-container ul {
     list-style-type: square;
 
 }
@@ -60,24 +61,24 @@ img {
 
 .special-color {
     background-color: #fff7fc;
-    padding-inline: 30px;
-    padding-block-end: 15px;
-    margin-left: 18px;
+    padding-inline: 16px;
+    padding-block-end: 10px;
+    margin-left: 8px;
     border-radius: 8px;
 }
 
 .special-color ul {
-    padding-inline: 20px;
+    padding-inline: 10px;
 }
 
 .special-color h2 {
     color: hsl(332, 87%, 38%);
-    margin-block-start: 30px;
-    padding-block-start: 20px;
+    margin-block-start: 16px;
+    padding-block-start: 10px;
 }
 
 h2 {
-    margin-block-start: 25px;
+    margin-block-start: 10px;
     color: hsl(14, 45%, 36%);
 }
 
@@ -89,7 +90,7 @@ table {
 tr,
 td {
     border-bottom: 2px solid #ddd;
-    padding: 5px;
+    padding: 10px;
 }
 
 table tr:nth-child(even) {
@@ -108,15 +109,20 @@ table caption {
     text-align: left;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 90rem) {
+
+    body {
+        padding-block: 4rem;
+    }
+
     .main-container {
-        width: 100vw;
-        margin: 0px auto;
+        min-width: 80rem;
+        margin: 30px auto;
         background: #fff;
-        padding-inline: 20px;
+        padding-inline: 30px;
     }
 
     .sub-container {
-        padding-left: 20px;
+        padding-inline-start: 30px;
     }
 }
