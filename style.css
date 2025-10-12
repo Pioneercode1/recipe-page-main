@@ -1,30 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Amiri", serif;
+    font-weight: 400;
     line-height: 1.6;
     background-color: hsl(29, 53%, 90%);
     color: #000;
 }
+
 .main-container {
-    max-width: 800px;
-    margin: 8rem auto;
-    background: #fff;
+    max-width: 1440px;
+    margin: 4rem auto;
+    background: hsl(0, 0%, 100%);
     padding: 25px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.sub-container {
+    padding-left: 20px;
+}
+
+.span-bold {
+    font-weight: bold;
+    color: hsl(30, 10%, 34%);
+}
+
+.sub-container ul,
+ol {
+    padding-left: 20px;
+    margin-block: 15px 30px;
+}
+
+ul {
+    list-style-type: square;
+
+}
+
+ul li::marker {
+    color: rgb(194, 9, 9);
+    font-size: smaller;
+}
+
+ol li::marker {
+    color: rgb(194, 9, 9);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .special-color {
     background-color: #fff7fc;
-    padding: 30px;
+    padding-inline: 30px;
+    padding-block-end: 15px;
+    margin-left: 18px;
+    border-radius: 8px;
 }
+
+.special-color ul {
+    padding-inline: 20px;
+}
+
 .special-color h2 {
-    color: #792b49;
+    color: hsl(332, 87%, 38%);
+    margin-block-start: 30px;
+    padding-block-start: 20px;
 }
+
 h2 {
-    margin-bottom: 15px;
-    color: #7e473b;
+    margin-block-start: 25px;
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border-bottom: 2px solid #ddd;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table caption {
+    text-align: left;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        width: 100vw;
+        margin: 0px auto;
+        background: #fff;
+        padding-inline: 20px;
+    }
+
+    .sub-container {
+        padding-left: 20px;
+    }
 }
