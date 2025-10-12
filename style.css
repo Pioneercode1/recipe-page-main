@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 
+:root {
+    --main-bg-color: hsl(29, 53%, 90%);
+    --container-bg-color: hsl(0, 0%, 100%);
+    --text-color: hsl(30, 10%, 34%);
+    --highlight-color: rgb(194, 9, 9);
+    --special-bg-color: #fff7fc;
+    --special-text-color: hsl(332, 87%, 38%);
+    --heading-color: hsl(14, 45%, 36%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +20,7 @@ body {
     font-family: "Amiri", serif;
     font-weight: 400;
     line-height: 1.6;
-    background-color: hsl(29, 53%, 90%);
+    background-color: var(--main-bg-color);
     color: #000;
     padding-block-end: 1rem;
 }
@@ -18,7 +28,7 @@ body {
 .main-container {
     max-width: 23.5rem;
     margin: 10px auto;
-    background: hsl(0, 0%, 100%);
+    background: var(--container-bg-color);
     padding: 16px;
     border-radius: 16px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +40,7 @@ body {
 
 .span-bold {
     font-weight: bold;
-    color: hsl(30, 10%, 34%);
+    color: var(--text-color);
 }
 
 .sub-container ul,
@@ -45,12 +55,12 @@ ol {
 }
 
 ul li::marker {
-    color: rgb(194, 9, 9);
+    color: var(--highlight-color);
     font-size: smaller;
 }
 
 ol li::marker {
-    color: rgb(194, 9, 9);
+    color: var(--highlight-color);
 }
 
 img {
@@ -60,7 +70,7 @@ img {
 }
 
 .special-color {
-    background-color: #fff7fc;
+    background-color: var(--special-bg-color);
     padding-inline: 16px;
     padding-block-end: 10px;
     margin-left: 8px;
@@ -72,14 +82,14 @@ img {
 }
 
 .special-color h2 {
-    color: hsl(332, 87%, 38%);
+    color: var(--special-text-color);
     margin-block-start: 16px;
     padding-block-start: 10px;
 }
 
 h2 {
     margin-block-start: 10px;
-    color: hsl(14, 45%, 36%);
+    color: var(--heading-color);
 }
 
 table {
@@ -98,7 +108,7 @@ table tr:nth-child(even) {
 }
 
 table td:nth-child(2) {
-    color: rgb(194, 9, 9);
+    color: var(--highlight-color);
 }
 
 table tr:hover {
@@ -118,7 +128,6 @@ table caption {
     .main-container {
         min-width: 80rem;
         margin: 30px auto;
-        background: #fff;
         padding-inline: 30px;
     }
 
