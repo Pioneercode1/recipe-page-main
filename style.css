@@ -96,6 +96,10 @@ table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+table td:nth-child(2) {
+    color: rgb(194, 9, 9);
+}
+
 table tr:hover {
     background-color: #f1f1f1;
 }
