@@ -22,12 +22,13 @@ body {
     line-height: 1.6;
     background-color: var(--main-bg-color);
     color: #000;
-    padding-block-end: 1rem;
+    padding-block-end: 2rem;
 }
 
 .main-container {
     max-width: 23.5rem;
-    margin: 10px auto;
+    min-height: vh;
+    margin: 2rem auto;
     background: var(--container-bg-color);
     padding: 16px;
     border-radius: 16px;
@@ -35,7 +36,7 @@ body {
 }
 
 .sub-container {
-    padding-inline-start: 10px;
+    padding-inline-start: 16px;
 }
 
 .span-bold {
@@ -45,8 +46,8 @@ body {
 
 .sub-container ul,
 ol {
-    padding-inline-start: 10px;
-    margin-block: 8px 16px;
+    padding-inline-start: 16px;
+    margin-block: 16px 20px;
 }
 
 .sub-container ul {
@@ -72,23 +73,24 @@ img {
 .special-color {
     background-color: var(--special-bg-color);
     padding-inline: 16px;
-    padding-block-end: 10px;
-    margin-left: 8px;
+    padding-block-end: 16px;
+    margin-left: 10px;
     border-radius: 8px;
 }
 
 .special-color ul {
-    padding-inline: 10px;
+    padding-inline: 16px;
+    padding-block: 10px;
 }
 
 .special-color h2 {
     color: var(--special-text-color);
     margin-block-start: 16px;
-    padding-block-start: 10px;
+    padding-block-start: 16px;
 }
 
 h2 {
-    margin-block-start: 10px;
+    margin-block-start: 16px;
     color: var(--heading-color);
 }
 
@@ -122,7 +124,7 @@ table caption {
 @media (min-width: 90rem) {
 
     body {
-        padding-block: 4rem;
+        padding-block: 5rem;
     }
 
     .main-container {
