@@ -35,6 +35,16 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+    line-height: 1.3;
+    margin-inline-start: 10px;
+}
+
+h1+p {
+    margin-block: 8px;
+    margin-inline-start: 10px;
+}
+
 .sub-container {
     padding-inline-start: 16px;
 }
@@ -97,6 +107,7 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-block: 16px;
 }
 
 tr,
@@ -136,4 +147,9 @@ table caption {
     .sub-container {
         padding-inline-start: 30px;
     }
+
+    table {
+        margin-block: 30px;
+    }
+
 }
