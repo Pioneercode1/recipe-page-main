@@ -23,12 +23,14 @@ body {
     background-color: var(--main-bg-color);
     color: #000;
     padding-block-end: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container {
     max-width: 23.5rem;
     min-height: vh;
-    margin: 2rem auto;
     background: var(--container-bg-color);
     padding: 16px;
     border-radius: 16px;
@@ -140,7 +142,6 @@ table caption {
 
     .main-container {
         min-width: 80rem;
-        margin: 30px auto;
         padding-inline: 30px;
     }
 
