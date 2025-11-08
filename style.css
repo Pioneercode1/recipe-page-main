@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .main-container {
@@ -141,7 +142,7 @@ table caption {
     }
 
     .main-container {
-        min-width: 80rem;
+        max-width: clamp(45rem, 50%, 1024px);
         padding-inline: 30px;
     }
 
