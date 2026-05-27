@@ -30,8 +30,7 @@ body {
 }
 
 .main-container {
-    max-width: 23.5rem;
-    min-height: vh;
+    width: clamp(22.5rem, 50%, 800px);
     background: var(--container-bg-color);
     padding: 16px;
     border-radius: 16px;
@@ -142,7 +141,7 @@ table caption {
     }
 
     .main-container {
-        max-width: clamp(45rem, 50%, 1024px);
+        width: 38rem;
         padding-inline: 30px;
     }
 
