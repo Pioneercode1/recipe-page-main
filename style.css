@@ -31,7 +31,7 @@ body {
 }
 
 .main-container {
-    width: clamp(22.5rem, 50%, 800px);
+    width: clamp(22.5rem, 40%, 800px);
     background: var(--container-bg-color);
     padding: 16px;
     border-radius: 16px;
@@ -54,7 +54,6 @@ h1+p {
 
 .span-bold {
     font-weight: 700;
-    font-size: 1.1em;
     color: var(--dark-text-color);
 }
 
@@ -144,11 +143,11 @@ table caption {
 
     .main-container {
         width: 38rem;
-        padding-inline: 30px;
+        padding-inline: 16px;
     }
 
     .sub-container {
-        padding-inline-start: 30px;
+        padding-inline-start: 16px;
     }
 
     table {
