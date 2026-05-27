@@ -4,6 +4,7 @@
     --main-bg-color: hsl(29, 53%, 90%);
     --container-bg-color: hsl(0, 0%, 100%);
     --text-color: hsl(30, 10%, 34%);
+    --dark-text-color: #000;
     --highlight-color: rgb(194, 9, 9);
     --special-bg-color: #fff7fc;
     --special-text-color: hsl(332, 87%, 38%);
@@ -21,7 +22,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     background-color: var(--main-bg-color);
-    color: #000;
+    color: var(--dark-text-color);
     padding-block-end: 2rem;
     display: flex;
     justify-content: center;
@@ -52,8 +53,9 @@ h1+p {
 }
 
 .span-bold {
-    font-weight: bold;
-    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--dark-text-color);
 }
 
 .sub-container ul,
